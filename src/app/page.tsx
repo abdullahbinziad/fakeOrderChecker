@@ -162,7 +162,7 @@ export default function Home() {
                             বাতিল
                           </th>
                           <th className="p-4 font-hind-semibold border-r border-gray-200 last:border-r-0">
-                            বাতিল হার
+                            ডেলিভারির হার
                           </th>
                         </tr>
                       </thead>
