@@ -150,7 +150,7 @@ export default function Home() {
                           successRatio={result.successRatio}
                         />
 
-                        <div className="py-8 sm:py-12 text-center sm:text-left text-xl sm:text-2xl font-bold text-blue-700 bg-blue-50 rounded-lg px-4 sm:px-6 shadow-sm border border-blue-200 font-solaiman w-full sm:w-auto">
+                        <div className="py-8 sm:py-12 text-center sm:text-left text-xl sm:text-xl font-bold text-blue-700 bg-blue-50 rounded-lg px-4 sm:px-6 shadow-sm border border-blue-200 font-solaiman w-full sm:w-auto">
                           {result.message}
                         </div>
                       </div>
