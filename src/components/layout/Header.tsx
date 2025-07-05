@@ -21,7 +21,7 @@ export function Header({ logo, navigation = [] }: HeaderProps) {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/">
+            <Link href="https://flexsoftr.com" target="_blank">
               <Image
                 src={logo as string}
                 alt="logo"
