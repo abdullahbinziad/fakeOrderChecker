@@ -45,12 +45,12 @@ export function SuccessRatioDisplay({
         successRatio
           ? getGradientClass(successRatio)
           : "from-gray-400 to-gray-500"
-      } rounded-full w-44 h-44 flex items-center justify-center shadow-lg ${
+      } rounded-full w-32 h-32 sm:w-44 sm:h-44 flex items-center justify-center shadow-lg ${
         showAnimation ? "animate-pulse" : ""
       } ${className}`}
     >
-      <div className="bg-white rounded-full w-40 h-40 flex flex-col items-center justify-center">
-        <div className="text-4xl font-extrabold text-gray-900">
+      <div className="bg-white rounded-full w-28 h-28 sm:w-40 sm:h-40 flex flex-col items-center justify-center">
+        <div className="text-2xl sm:text-4xl font-extrabold text-gray-900">
           {successRatio !== null ? (
             <CountUp
               end={successRatio}
@@ -69,12 +69,12 @@ export function SuccessRatioDisplay({
             "--%"
           )}
         </div>
-        <div className="text-sm text-gray-600 mt-3 font-hind-light">
+        <div className="text-xs sm:text-sm text-gray-600 mt-2 sm:mt-3 font-hind-light">
           সাকসেস রেশিও
         </div>
         {successRatio !== null && (
           <div
-            className={`text-base font-bold mt-3 font-solaiman transition-all duration-500 ${
+            className={`text-sm sm:text-base font-bold mt-2 sm:mt-3 font-solaiman transition-all duration-500 ${
               animationComplete ? getStatusColor(successRatio) : "text-gray-500"
             }`}
           >

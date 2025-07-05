@@ -48,17 +48,19 @@ export function AnimatedStatCard({
 
   return (
     <div
-      className={`flex-1 ${styles.bg} rounded-lg px-6 py-4 text-center border ${styles.border} shadow-sm ${className}`}
+      className={`flex-1 ${styles.bg} rounded-lg px-4 sm:px-6 py-3 sm:py-4 text-center border ${styles.border} shadow-sm ${className}`}
     >
-      <div className={`text-2xl font-bold ${styles.text}`}>
+      <div className={`text-lg sm:text-2xl font-bold ${styles.text}`}>
         <CountUp
           end={value}
           duration={duration}
           delay={delay}
-          className={`text-2xl font-bold ${styles.text}`}
+          className={`text-lg sm:text-2xl font-bold ${styles.text}`}
         />
       </div>
-      <div className={`text-sm ${styles.label} font-hind-light mt-1`}>
+      <div
+        className={`text-xs sm:text-sm ${styles.label} font-hind-light mt-1`}
+      >
         {label}
       </div>
     </div>
